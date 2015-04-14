@@ -15,26 +15,40 @@
 			回首頁
 		</nav>
 		<figure>
-			<img src="add.png"/>
+			<img src="baefan.gif"/>
 			<figcaption>圖一</figcaption>
 			
 		</figure>
-		<form action="http://www.meigic.tw/test.php">
+		<figure>
+			<img src="T2.jpg"/>
+			<figcaption>圖B</figcaption>
+			
+		</figure>
+		<figure>
+			<img src="T3.jpeg"/>
+			<figcaption>圖丙</figcaption>
+			
+		</figure>
+		<form method="post" action="http://www.meigic.tw/test.php" enctype="multipart/form-data">
 			<div>
 				<label>Nickname:</label>
-				<input name="nickname" type="text"/>
+				<input id="nickname" name="nickname" type="text" placeholder="請輸入暱稱"/>
 			</div>
 			<div>
 				<label>Email:</label>
-				<input name="email" type="Email"/>
+				<input id="email" name="email" type="email"/ value="test@email.com">
 			</div>
 			<div>
 				<label>Password:</label>
-				<input name="password" type="Password"/>
-
+				<input name="password" type="password"/>
+			</div>
+			<div>
+				<label>Password:</label>
+				<input id="pic_file" type="file" />
+			</div>
+			<div>
 				<button> sign up</button>
 			</div>
-			
 		</form>
 		<table border="1">
 			<thead>

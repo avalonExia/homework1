@@ -3,9 +3,43 @@
 <head> 
 	<meta charset="utf-8" />
 	<title>First Page</title>
+	<style>
+		body{
+			width:50%;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #36465d;
+		}
+		header{
+			height: 150px;
+			background-color: #DADADA;
+			padding-left: 20px;
+			padding-top: 10px;
+			position: relative;
+		}
+		nav{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			width: 560px;
+			background-color:#F0F0F0;
+		}
+		header li {
+			width: 100px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			float:left;
+		}
+		header li:hover {
+			font-size:20pt;
+			background-color: #99FF99;
+		}
+
+	</style>
 	<style type="text/css">
 		h1{
-			color:#FF0000;
+			color:#BCBCBC;
 			font-size: 18pt;
 			font-weight: bold;
 		}
@@ -32,100 +66,94 @@
 <body>
 
 	<header>
-		<div>
-			<h1>
-				我愛北方棲姬owob
-			</h1>
-		</div>
-		<a href="http://www.google.com/">Google</a>
-		<a href="https://www.tumblr.com/">tumblr</a>
-		<nav>
-			回首頁
-		</nav>
-		<figure>
-			<img src="baefan.gif"/>
-			<figcaption>圖一</figcaption>
-			
-		</figure>
-		<figure>
-			<img src="T2.jpg"/>
-			<figcaption>圖B</figcaption>
-			
-		</figure>
-		<figure>
-			<img src="T3.jpeg"/>
-			<figcaption>圖丙</figcaption>
-			
-		</figure>
-		<form method="post" action="http://www.meigic.tw/test.php" enctype="multipart/form-data">
-			<div>
-				<label>Nickname:</label>
-				<input id="nickname" name="nickname" type="text" placeholder="請輸入暱稱"/>
-			</div>
-			<div>
-				<label>Email:</label>
-				<input id="email" name="email" type="email"/ value="test@email.com">
-			</div>
-			<div>
-				<label>Password:</label>
-				<input name="password" type="password"/>
-			</div>
-			<div>
-				<label>Password:</label>
-				<input id="pic_file" type="file" />
-			</div>
-			<div>
-				<button> sign up</button>
-			</div>
-		</form>
-		<table border="1">
-			<thead>
-				<tr>
-					<td>Numder</td>
-					<td>First Name</td>
-					<td>Last Name</td>
-					<td>Point</td>
-				</tr>
-			</thead>
-			<tbody>
+		<h1>
+			我愛北方棲姬owob
 
-				<tr>
-					<td>1</td>
-					<td>alpha</td>
-					<td>OAO</td>
-					<td>10</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>beta</td>
-					<td>OWO</td>
-					<td>20</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>gama</td>
-					<td>QAQ</td>
-					<td>30</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>mega</td>
-					<td>OVO</td>
-					<td>40</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td>5</td>
-					<td>OHO</td>
-					<td>O~O</td>
-					<td>100</td>
-				</tr>
-			</tfoot>
-		</table>
-		
+		</h1>	
+		<nav>
+			<a href="http://www.google.com/">Google</a>
+			<a href="https://www.tumblr.com/">tumblr</a>
+		</nav>	
 	</header>
 
+	<figure>
+		<img src="baefan.gif"/>
+		<figcaption>圖一</figcaption>
+	</figure>
+	<figure>
+		<img src="T2.jpg"/>
+		<figcaption>圖B</figcaption>
+	</figure>
+	<figure>
+		<img src="T3.jpeg"/>
+		<figcaption>圖丙</figcaption>
+	</figure>
+	<table border="1">
+		<thead>
+			<tr>
+				<td>Numder</td>
+				<td>First Name</td>
+				<td>Last Name</td>
+				<td>Point</td>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr>
+				<td>1</td>
+				<td>alpha</td>
+				<td>OAO</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>beta</td>
+				<td>OWO</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>gama</td>
+				<td>QAQ</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>mega</td>
+				<td>OVO</td>
+				<td>40</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>5</td>
+				<td>OHO</td>
+				<td>O~O</td>
+				<td>100</td>
+			</tr>
+		</tfoot>
+	</table>
+	<form method="post" action="http://www.meigic.tw/test.php" enctype="multipart/form-data">
+		<div>
+			<label>Nickname:</label>
+			<input id="nickname" name="nickname" type="text" placeholder="請輸入暱稱"/>
+		</div>
+		<div>
+			<label>Email:</label>
+			<input id="email" name="email" type="email"/ value="test@email.com">
+		</div>
+		<div>
+			<label>Password:</label>
+			<input name="password" type="password"/>
+		</div>
+		<div>
+			<label>Password:</label>
+			<input id="pic_file" type="file" />
+		</div>
+		<div>
+			<button> sign up</button>
+		</div>
+	</form>
 	<hgroup>
 		<h1>北方棲姬</h1>
 		<h2>可愛的北方棲姬</h2>
@@ -149,7 +177,6 @@
 		</h4>	
 		<h3>資料來源：萌娘百科 艦隊Collection:北方棲姬</h3>
 	</article>
-
 </body>
 
 </html>
